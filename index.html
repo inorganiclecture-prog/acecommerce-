@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AceCommerce Coaching</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background: #2563eb;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') no-repeat center/cover;
+      color: white;
+    }
+
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .courses {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    form input, form textarea {
+      width: 80%;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AceCommerce Coaching</h1>
+  <p>Crack IPMAT, JIPMAT & CUET with Confidence</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Top Coaching for Commerce Entrances</h2>
+  <p>Join India's best preparation platform</p>
+</div>
+
+<div class="section" id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="courses">
+
+    <div class="card">
+      <h3>IPMAT</h3>
+      <p>Complete preparation course</p>
+      <p><b>₹25,000</b></p>
+      <button onclick="enquire()">Enquire</button>
+    </div>
+
+    <div class="card">
+      <h3>JIPMAT</h3>
+      <p>Crash + Full Course</p>
+      <p><b>₹18,000</b></p>
+      <button onclick="enquire()">Enquire</button>
+    </div>
+
+    <div class="card">
+      <h3>CUET</h3>
+      <p>Commerce Entrance Prep</p>
+      <p><b>₹15,000</b></p>
+      <button onclick="enquire()">Enquire</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2>Testimonials</h2>
+  <p>"Best coaching! Cleared IPMAT easily." - Student</p>
+  <p>"Great mentors and study material." - Student</p>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact / Enquiry</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+
+<footer>
+  <p>© 2026 AceCommerce Coaching</p>
+</footer>
+
+<script>
+function enquire() {
+  alert("Please fill the enquiry form below!");
+}
+
+function submitForm(e) {
+  e.preventDefault();
+  alert("Enquiry submitted!");
+}
+</script>
+
+</body>
+</html>
